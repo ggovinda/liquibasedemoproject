@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+	xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+	
+    <changeSet id="First demo table alter" author="ggokulraj">
+        <sql>
+			ALTER TABLE liquibase_demo add column created TIMESTAMP;
+        </sql>
+    </changeSet>
+    <changeSet id="Second demo table alter modify" author="ggokulraj">
+        <sql>
+			ALTER TABLE liquibase_demo2 modify column test_field VARCHAR(33);
+        </sql>
+    </changeSet>
+</databaseChangeLog>
