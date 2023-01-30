@@ -20,4 +20,9 @@
     		insert into liquibase_demo2(id,test_field, timestamp) values(3,'testdata3',now());
         </sql>
     </changeSet>
+    <changeSet id="Insertstmt2" author="ggokulraj">
+        <sql>
+    		insert into liquibase_demo2(id,test_field, timestamp) values(4,'testdata4',now());
+        </sql>
+    </changeSet>
 </databaseChangeLog>
