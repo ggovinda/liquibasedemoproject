@@ -15,7 +15,7 @@
 			ALTER TABLE liquibase_demo2 modify column test_field VARCHAR(33);
         </sql>
     </changeSet>
-    <changeSet id="Second demo table alter modify" author="ggokulraj">
+    <changeSet id="Insertstmt1" author="ggokulraj">
         <sql>
     		insert into liquibase_demo2(id,test_field, timestamp) values(3,'testdata3',now());
         </sql>
